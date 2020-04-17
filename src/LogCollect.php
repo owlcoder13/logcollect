@@ -72,9 +72,21 @@ class LogCollect
      * @param $type
      * @param $message
      * @param null $trace
+     * @throws \Exception
      */
     public function write($type, $message, $trace = null)
     {
+        if ($trace != null) {
+            if (is_array($trace)) {
+                $trace = json_encode($trace);
+            }
+
+            if (is_object($trace)) {
+                throw new \Exception('Trace can not be and object');
+            }
+        }
+
+
         $this->postRequest([
             'type' => $type,
             'message' => $message,
