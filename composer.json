@@ -1,0 +1,15 @@
+{
+    "name": "owlcoder/logcollect",
+    "authors": [
+        {
+            "name": "owl",
+            "email": "owlcoder1@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Owlcoder\\LogCollect\\": "src/"
+        }
+    }
+}
