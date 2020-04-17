@@ -1,15 +1,25 @@
 {
     "name": "owlcoder/logcollect",
+    "description": "Collect logs from single or multiple sites",
+    "keywords": [
+        "log",
+        "logging",
+        "collect logs"
+    ],
     "authors": [
         {
             "name": "owl",
             "email": "owlcoder1@gmail.com"
         }
     ],
+    "license": "MIT",
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "Owlcoder\\LogCollect\\": "src/"
         }
+    },
+    "require": {
+        "php": ">=7.0"
     }
 }
